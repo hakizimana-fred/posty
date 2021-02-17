@@ -20,11 +20,11 @@
             @auth
 
             <li><a href="" class="p-3">Fred</a></li>
-            <li><a href="" class="p-3">Logout</a></li>
+            <li><a href="{{route('logout')}}" class="p-3">Logout</a></li>
             @endauth
 
             @guest
-            <li><a href="" class="p-3">login</a></li>
+            <li><a href="{{ route('login')}}" class="p-3">login</a></li>
             <li><a href="{{ route('register')}}" class="p-3">Register</a></li>
             @endguest
         </ul>
